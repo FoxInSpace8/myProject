@@ -1,0 +1,28 @@
+#div1{
+	margin-top: 10%;
+	/*//text-align: center;*/
+}
+
+
+.cell{
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	vertical-align:center;
+}
+
+#validPopup{
+	position:fixed;
+	right:30px;
+	top:30px;
+    background: radial-gradient( #ffcccc, #ff6666);
+	margin:auto;
+	display: inline-block;
+
+}
+
+
+#validMess{
+	text-align: center;
+	padding:20px;
+}
