@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<meta charwet='utf8'/>
+<head>
+	<title>Крестики-нолики</title>
+	<script src="functions.js">
+	</script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body id="gameBody" onload="newGame()" >
+	<div id="div1" align="center" >
+		<h1 align="center">Новая игра</h1>
+		<table >
+			<tr>
+				<td valign="top">
+					<label for="text" id="label">Введите имя первого игрока:</label>
+				</td>
+				<td>
+					<input type="text" id="player1" name="player1" id="player1" onkeypress="clearValid(id)"/><br/><br/>
+				</td>
+				<td>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top">
+					<label for="text" id="label">Введите имя второго игрока:</label>
+				</td>
+				<td>
+					<input type="text" id="player2" name="player2" id="player2" onkeypress="clearValid(id)"/><br/><br/>
+				</td>
+				<td>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="count" id="label">Введите размерность:</label>
+				</td>
+				<td>
+					<input type="text" id="count" name="count" id="count" onkeypress="clearValid(id)"/> 
+				</td>
+				<td>
+					<input type="button" name="ok" id="ok" value="Ok" onclick="goToGame()"/>
+				</td>
+			</tr>		
+		</table>
+	</div> 
+	<div id="div2" hidden="true">
+		<br/>
+		<h1 align="center">ИГРА</h1>
+		<h2 id="header2" align="center"><div id="current"></div>
+		</h2><br/>
+		<table id="tableXO" border="5" align="center">
+		</table><br/>
+		<input type="button" style="margin-left: 47%" id="newGame" value="Новая игра" onclick="newGame()" hidden="true"/>
+	</div>
+		<div id="validPopup" hidden="true">
+			<div id="validMess" hidden="true">
+			</div>
+		</div>
+</body>
+</html>
